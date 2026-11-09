@@ -1,2 +1,2 @@
-﻿using var game = new ResolutionSample.Core.Game1();
+﻿using var game = new ResolutionSample.Core.Game1("OpenGL");
 game.Run();

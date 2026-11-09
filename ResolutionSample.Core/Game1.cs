@@ -20,7 +20,7 @@ public class Game1 : Game
 
     private bool is1080p = true;
 
-    public Game1()
+    public Game1(string backend = "")
     {
         graphics = new GraphicsDeviceManager(this)
         {
@@ -33,7 +33,7 @@ public class Game1 : Game
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
 
-        Window.Title = "MonoGame 3.8.6 DesktopVK Test";
+        Window.Title = $"{backend}";
     }
 
     protected override void Initialize()
